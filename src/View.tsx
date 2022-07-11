@@ -6,10 +6,9 @@ const View = () => {
   const get = useView((state) => state.get);
   useEffect(() => {
     get();
-  }, []);
+  });
   return (
     <>
-      <h1>Hello</h1>
       {state ? <p>{JSON.stringify(state)}</p> : <h1>N</h1>}
     </>
   );
